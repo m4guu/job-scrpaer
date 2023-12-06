@@ -1,0 +1,7 @@
+# config
+.env
+.ini
+
+# folders
+.venv 
+__pycache__

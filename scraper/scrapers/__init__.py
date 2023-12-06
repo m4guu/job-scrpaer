@@ -1,0 +1,3 @@
+from .pracuj_pl_scraper import scrape_pracuj_pl
+from .the_protocol_scraper import scrape_the_protocol
+from .bulldog_job_scraper import scrape_bulldog_job
