@@ -1,10 +1,11 @@
 from flask import Flask
 
-def create_app():
+
+def create_flask_app():
     app = Flask(__name__)
 
     from .views import views
 
-    app.register_blueprint(views, url_prefix='/')
-    
+    app.register_blueprint(views, url_prefix="/")
+
     return app

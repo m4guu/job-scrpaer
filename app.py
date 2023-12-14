@@ -1,17 +1,18 @@
-import configparser
-import os
+from threading import Thread
 
-from website import create_app
-
-config = configparser.ConfigParser()
-config.read(os.path.abspath(os.path.join(".ini")))
-
-
-if __name__ == '__main__':
-    app = create_app()  
-    app.config['SECRET_KEY'] = 'secret key'
-    app.config['MONGO_URI'] = config['DEV']['DB_URI']
-    app.config['DEBUG'] = True
+from config import FlaskConfig
+from website import create_flask_app
+from website.scraper import run_scraper
+from website.dashboard import create_dash_application
 
 
-    app.run()
+if __name__ == "__main__":
+    # FLASK app
+    app = create_flask_app()
+    app.config.from_object(FlaskConfig)
+    # DASH app
+    create_dash_application(app)
+    # SCRAPER
+    scraper_thread = Thread(target=run_scraper, args=(app,)).start()
+
+    app.run(host="0.0.0.0")

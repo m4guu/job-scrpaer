@@ -1,0 +1,16 @@
+@import "./primitives.css";
+
+:root {
+  /* background */
+  --vp-c-bg-dark: var(--vp-c-grey-main);
+
+  /* text */
+  --vp-c-text-1: var(--vp-c-grey-tint-4);
+  --vp-c-text-2: var(--vp-c-grey-tint-2);
+  --vp-c-text-3: var(--vp-c-grey-tint-1);
+
+  --vp-c-text-4: var(--vp-c-red-main);
+
+  /* gutters */
+  --vp-c-gutter: var(--vp-c-black);
+}

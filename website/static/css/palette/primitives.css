@@ -1,0 +1,39 @@
+/* PRIMITIVES/BASIC COLORS */
+
+:root {
+  /* BASE */
+  --vp-c-black: #000000;
+  --vp-c-white: #ffffff;
+
+  /* GREY */
+  --vp-c-grey-main: rgb(30, 30, 32);
+
+  --vp-c-grey-tint-1: rgb(235, 235, 245, 0.38);
+  --vp-c-grey-tint-2: rgb(235, 235, 245, 0.6);
+  --vp-c-grey-tint-3: rgb(82, 82, 89, 0.68);
+  --vp-c-grey-tint-4: rgb(255, 255, 245, 0.86);
+  --vp-c-grey-tint-5: rgb(60, 60, 67, 0.33);
+  --vp-c-grey-tint-6: rgb(60, 60, 67, 0.75);
+  --vp-c-grey-tint-7: rgb(60, 60, 67);
+  --vp-c-grey-tint-8: rgb(37, 37, 41);
+  --vp-c-grey-tint-9: rgb(49, 49, 54);
+  --vp-c-grey-tint-10: rgb(142, 142, 147);
+
+  /* BLUE */
+  --vp-c-blue-tint-1: rgb(246, 246, 247);
+  --vp-c-blue-tint-1: rgb(60, 60, 67, 0.29);
+  --vp-c-blue-tint-1: rgb(82, 82, 89, 0.32);
+
+  /* GREEN */
+  --vp-c-green-main: #10b981;
+
+  --vp-c-green-tint-1: #34d399;
+  --vp-c-green-tint-1: #6ee7b7;
+  --vp-c-green-tint-1: #059669;
+  --vp-c-green-tint-1: #10b981;
+
+  /* RED */
+  --vp-c-red-main: #e80443;
+}
+
+/* PRIMITIVES/BASIC COLORS */
